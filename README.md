@@ -12,12 +12,12 @@
 git clone git@github.com:zjy01/react_and_redux_and_router_example.git  
 cd react_and_redux_and_router_example
 ```
-
+  
 2. 安装依赖  
 ```bash
 npm install
 ```
-
+  
 3. 安装webpack(如果没有)  
 ```bash
 npm install -g webpack
@@ -29,13 +29,13 @@ npm install -g webpack
 npm run server
 ```  
 等待编译完成(客户端js会持续编译), 显示 <code>webpack: bundle is now VALID.</code>即表示编译完成
-
+  
 2. 运行  
 新开控制台窗口,运行下面命令
 ```bash
 npm start
 ```
-
+  
 3. 访问  
 浏览器输入 localhost:3000 访问
 
