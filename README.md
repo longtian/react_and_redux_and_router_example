@@ -7,36 +7,36 @@
 存在一定的问题, 欢迎提出  
 
 ## 安装  
-1. 克隆仓库  
+1. 克隆仓库
 ```bash
 git clone git@github.com:zjy01/react_and_redux_and_router_example.git  
 cd react_and_redux_and_router_example
 ```  
   
-2. 安装依赖  
+2. 安装依赖
 ```bash
 npm install
 ```  
   
-3. 安装webpack(如果没有)  
+3. 安装webpack(如果没有)
 ```bash
 npm install -g webpack
 ```  
 
 ## 使用  
-1. 编译\打包文件  
+1. 编译\打包文件
 ```bash
 npm run server
 ```  
 等待编译完成(客户端js会持续编译), 显示 <code>webpack: bundle is now VALID.</code>即表示编译完成  
   
-2. 运行  
+2. 运行
 新开控制台窗口,运行下面命令
 ```bash
 npm start
 ```  
   
-3. 访问  
+3. 访问
 浏览器输入 localhost:3000 访问
 
 ## 目录 
@@ -65,12 +65,12 @@ npm start
 -- webpack.server.config.json (webpack 服务端打包配置文件 )  
 
 ## 问题  
-1. 服务端打包  
+1. 服务端打包
 心里一直觉得毛毛的, 服务端到底需不需要webpack打包,应该如何打包.  
 如果不打包, 服务端渲染就会遇到很多问题 ES6语法(例如 import ) 或者 (jsx) 的某些语句无法实现,  
 打包了感觉整个文件很大, 很乱  
 
-2. __dirname  
+2. __dirname
 这也是服务端使用webpack 打包遗留的问题, __dirname在服务器很常使用, 例如在 express 中,
 <pre>app.use('/public',express.static(__dirname + '/public'));</pre>
 用来设置静态文件路由  
