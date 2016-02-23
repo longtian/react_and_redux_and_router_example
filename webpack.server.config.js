@@ -13,7 +13,7 @@ fs.readdirSync('node_modules')
 
 module.exports = {
   target:'node',
-  //devtool: 'eval',
+  devtool: false,
   entry: {
     //'serverRouter':'./server',
     //'serverApp':'./server.bak',

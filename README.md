@@ -63,6 +63,7 @@ npm start
 -- package.json (包详情)  
 -- README.md (说明)  
 -- webpack.server.config.json (webpack 服务端打包配置文件 )  
+-- webpack.static.config.json (webpack 客户端打包配置文件 )  
 
 ## 问题  
 一. 服务端打包
@@ -87,6 +88,7 @@ console.log(__filename);// 等于'/index.js'
 后续有解决方法也会更新  
 
 三. 文件过大的问题  
+<font color=#DC143C >(已解决, 原来的配置文件添加了devtool: 'eval', 使得所有注释都无法删除,删掉降到了296k)</font>
 静态js资源|打包丑化完成后,足足有1M大小,不得了啊, 到底是什么原因: 引入文件过多? webpack配置有问题 ? 有什么解决方案
 
 ## 后续  
